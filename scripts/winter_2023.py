@@ -1,4 +1,5 @@
 import json
+from common import *
 
 EVENT_NAME  = 'Winter 2023'
 INPUT_PATH  = '/Users/m1/Desktop/Winter export/metadata/{}.json'
@@ -9,6 +10,12 @@ id_mapper = [
     158, 310, 264, 366, 909, 1068, 310, 1,  139, 193,   # 1-10
     613, 709, 932, 14,  105, 274,  463, 84, 256, 967,   # 11-20
 ]
+
+# check duplicate ids
+dup_ids = get_duplicate_ids(id_mapper)
+if (len(dup_ids) > 0):
+    print("duplicated ids: {}".format(dup_ids))
+    exit()
 
 for idx, token_id in enumerate(id_mapper):
     event_id = idx + 1
