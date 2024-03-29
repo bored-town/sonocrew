@@ -7,7 +7,7 @@ OUTPUT_PATH = '../json/{}.json'
 IPFS_URI    = 'ipfs://bafybeihp5rcvh63mhwn63ud4biw2h7v54umsfnub7z2laemcgm5xdvrxkm'
 
 id_mapper = [
-    158, 716, 54,  1046, 146, 452, 62, 463, 685, 731,   # 1-10
+    158, 716, 54,  1046, 146, 452, 67, 463, 685, 731,   # 1-10
     218, 638, 157, 112,  73,  734, 940,                 # 11-17
 ]
 
